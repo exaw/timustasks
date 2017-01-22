@@ -13,29 +13,26 @@
 #include <unordered_set>
 
 
-
 using namespace std;
 
 int main ()
 {
     ios_base::sync_with_stdio ();
 
-    double value=0;
+    long long value = 0;
     vector<double> sqrts;
     sqrts.reserve (1024);
-    while ( cin>>value )
+    while (scanf("%llu", &value) != EOF)
     {
-        double sqrtValue = sqrt(value);
+        double sqrtValue = sqrt ((double)value);
         sqrts.push_back (sqrtValue);
 
     }
 
-    if ( sqrts.empty () )
-        return 0;
-
-    for  ( auto it = sqrts.crbegin (); it != sqrts.crend (); ++it )
+    size_t n = sqrts.size ();
+    for (size_t i = n; i > 0; --i)
     {
-        printf ("%.4f\n", *it );
+        printf ("%.4f\n", sqrts[i-1]);
     }
 
     return 0;
