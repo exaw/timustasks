@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+
+#idea
+.idea
+cmake-build-debug
+
+timus_login
