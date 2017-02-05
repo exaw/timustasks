@@ -3,6 +3,6 @@ project(timus)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES 2012/main.cpp)
+set(SOURCE_FILES 1877/main.cpp)
 
 add_executable(timus ${SOURCE_FILES})
